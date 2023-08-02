@@ -1,0 +1,45 @@
+{
+  "name": "bjoern-buettner/logger",
+  "description": "A simple lazy logger for PHP",
+  "keywords": [
+    "logger",
+    "log",
+    "php",
+    "lazy",
+    "performance"
+  ],
+  "homepage": "https://github.com/bjoern-buettner/logger",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Björn Büttner",
+      "email": "bjoernbuettner@bjoern-buettner.me",
+      "homepage": "https://bjoern-buettner.me"
+    }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "psr/log": "^3.0.0",
+    "psr/log-implementation": "^3.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Me\\BjoernBuettner\\Logger\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Me\\BjoernBuettner\\Logger\\": "test/"
+    },
+    "files": [
+      "test/register_shutdown_function.php"
+    ]
+  },
+  "suggest": {
+    "monolog/monolog": "3.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.2.6",
+    "monolog/monolog": "^3.4"
+  }
+}
